@@ -9,3 +9,5 @@
 
   - role: gitlab/healthchecks
     tags: check
+
+ansible-playbook /vagrant/playbooks/run.yml --tags self_managed -i /tmp/vagrant-ansible/inventory/vagrant_ansible_local_inventory -e "check_type=all"
